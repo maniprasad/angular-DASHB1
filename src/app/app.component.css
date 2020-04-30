@@ -1,0 +1,11 @@
+.logout{
+padding-right: 40px !important;
+}
+
+ ::ng description{
+    width: 100% !important;
+} 
+
+description{
+    width: 100% !important;
+}

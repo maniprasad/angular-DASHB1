@@ -1,0 +1,26 @@
+.product-img{
+width: 100%;
+height: 100%;
+float: right;
+}
+.firstdiv{
+width: 65%;
+}
+.seconddiv{
+width:35%
+}
+.content-body{
+    float: right !important;
+    display: inline-flex;
+
+}
+.example-card{
+
+    margin: 2%;
+}
+.mat-card-image{
+width:75%
+}
+description{
+    width: 100% !important;
+}

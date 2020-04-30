@@ -1,0 +1,43 @@
+<p productlist>dashboard works!</p>
+<!-- 
+<div>
+<title>list products</title>
+<div class="content-body" *ngFor="let item of items">
+<div class="firstdiv">
+    <h1>{{item.name}}</h1>
+    <p>description</p>
+</div>
+<div class="seconddiv">
+   <img class="product-img" src="../../assets/images/Screenshot.png">
+ </div>    
+</div>
+</div> -->
+<!-- <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport"></cdk-virtual-scroll-viewport> -->
+<div *ngFor="let item of items">
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{item.name}}</mat-card-title>
+      <mat-card-subtitle>{{item.description}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{item.img}}" alt="Photo of a Shiba Inu">
+
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <!-- <checkbox mat-button (click)="dbclick()">LIKE</checkbox> -->
+      <mat-checkbox (change)="dbclick($event , item)"  >Check me!</mat-checkbox>
+      <button mat-button (click)="teri()">SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+<input  [(ngModel)]="name" (blur)="changetext()">
+<!-- <description (messageToEmit)="getMessage($event)"></description> -->
+
+
+{{thorData}}

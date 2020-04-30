@@ -1,0 +1,30 @@
+<!-- <div class="form-item">
+<label>Email : </label><input class="form-control"><br>
+<label>password : </label><input class="form-control">
+<input name="firstname" placeholder="First">
+<br>
+<button (click)="submit()" name="submit">submit</button>
+</div> -->
+
+<mat-card>
+    <mat-card-title>Login</mat-card-title>
+<mat-card-content>
+<form  [formGroup]="formGroup1"(ngSubmit)="submit()">
+  
+    <mat-form-field>
+      <input type="text" matInput placeholder="Username" [(ngModel)]="login.username" formControlName="username">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input type="password" matInput placeholder="Password"  [(ngModel)]="login.password" formControlName="password">
+    </mat-form-field>
+
+
+
+  <div class="button">
+    <button type="submit" mat-button>Login</button>
+  </div>
+
+</form>
+</mat-card-content>
+</mat-card>
